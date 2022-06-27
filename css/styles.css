@@ -6,12 +6,13 @@
     --text-address-color: rgb(255,255,255,.6);
     --logo-color: #000000;
 
-    --accent-color: #2196F3;
-    --accent-color-hover: #188CE8;
+    --accent-color: #2196f3;
+    --accent-color-hover: #188ce8;
 
     --background-header: #ffffff;
-    --background-hero-footer: #2F303A;
-    --background-team-section: #F5F4FA;
+    --background-hero: #c4c4c4;
+    --background-footer: #2f303a;
+    --background-team-section: #f5f4fa;
     --background-team-card: #ffffff;
     --background-filter: #f5f4fa;
     --background-card: #ffffff;
@@ -133,10 +134,19 @@ header {
 /* HERO */
 .hero {
     color: var(--text-color-secondary);
-    background-color: var(--background-hero-footer);
+    background-color: var(--background-hero);
+    border: 1px solid #000000;
     text-align: center;
-
     padding: 200px 0;
+
+   
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-team.jpg);
+    max-width: 1600px;
+    max-height: 600px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-title {
@@ -160,6 +170,7 @@ header {
     letter-spacing: 0.06em;
 
     padding: 10px 32px;
+    border: none;
     border-radius: 4px;
 }
 
@@ -274,7 +285,7 @@ justify-content: space-between;}
 
 /* FOOTER */
 
-footer {background-color: var(--background-hero-footer);
+footer {background-color: var(--background-footer);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
