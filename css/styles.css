@@ -1,0 +1,300 @@
+
+:root {
+    --text-color-primery: #757575;
+    --title-text-color: #212121;
+    --text-color-secondary: #ffffff;
+    --text-address-color: rgb(255,255,255,.6);
+    --logo-color: #000000;
+
+    --accent-color: #2196F3;
+    --accent-color-hover: #188CE8;
+
+    --background-header: #ffffff;
+    --background-hero-footer: #2F303A;
+    --background-team-section: #F5F4FA;
+    --background-team-card: #ffffff;
+    --background-filter: #f5f4fa;
+    --background-card: #ffffff;
+    --header-line: #ececec;
+    --border-works-card-description: #eeeeee;
+
+    --margin-card: 30px;
+    
+}
+
+body {
+    color: var(--text-color-primery);
+    font-family: 'Roboto', sans-serif;}
+
+
+ul {list-style: none;
+
+    margin: 0;
+    padding: 0;}
+
+a {text-decoration: none;
+    color: inherit;}
+
+button {cursor: pointer;}
+
+h1,h2,h3,h4,p {margin: 0 auto;}
+
+.picture {
+    display: block;
+    max-width: 100%;
+}
+
+/* SECTIONS-CONTAINER */
+.section {
+    padding: 94px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+   
+}
+
+/* HEADER */
+header {
+    background-color: var(--background-header);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    padding: 24px 0;
+    border-bottom: 1px solid var(--header-line);
+    }
+
+.container.page-header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main-nav, .nav-contact {
+    display: flex;
+    align-items: center;
+    }
+.main-nav .logo {margin-right: 93px;}
+
+.nav-item {display: flex;}
+.nav-item:not(:last-child), .nav-contact-item:not(:last-child) {margin-right: 50px;}
+
+.nav-link {color: var(--title-text-color);}
+.nav-link:hover,
+.nav-link:focus,
+.current {color: var(--accent-color);}
+
+
+.contact:hover,
+.contact:focus {
+    color: var(--accent-color);
+}
+
+.logo {
+    color: var(--logo-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo .part {
+    color: var(--accent-color);
+}
+
+
+/* TITLES */
+.title {color: var(--title-text-color);
+    font-weight: 700;}
+
+.features-title, .cases-title, .team-title, .works-title {font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;}
+
+.visually-hidden {position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;}
+
+/* HERO */
+.hero {
+    color: var(--text-color-secondary);
+    background-color: var(--background-hero-footer);
+    text-align: center;
+
+    padding: 200px 0;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+
+    width: 696px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    color: inherit;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    padding: 10px 32px;
+    border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--accent-color-hover);
+}
+
+/* FEATURES */
+
+.features {padding-bottom: 0;}
+
+.features-list {display:flex;}
+
+.features-item {flex-basis: calc((100% - (3 * var(--margin-card))) / 4);}
+
+.features-item + .features-item {margin-left: var(--margin-card);}
+
+.features-item-title {font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    }
+    
+.features-text {font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;}
+
+
+    /* CASES */
+.cases-list {display: flex;
+justify-content: space-between;}
+
+
+/* TEAM */
+.team {background-color: var(--background-team-section);}
+
+.team-list {display: flex;
+justify-content: space-between;}
+
+.team-card {background-color: var(--background-team-card);}
+
+.team-description {padding: 30px;}
+
+.team-name {font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 10px;}
+.team-position {font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;}
+
+
+/* PORTFOLIO */
+
+.filter-list {display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-item:not(:last-of-type) {margin-right: 8px;}
+
+.filter-button {color: var(--title-text-color);
+    background-color: var(--background-filter);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    padding: 6px 22px;
+    border: none;}
+
+.filter-button:hover, .filter-button:focus {
+    color: var(--text-color-secondary);
+    background-color: var(--accent-color);
+
+    border-radius: 4px;}
+
+.works-card-list {display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--margin-card));
+    margin-top: calc(-1 * var(--margin-card));
+}
+    
+.works-card {background-color: var(--background-card);
+    flex-basis: calc((100% - (2 * var(--margin-card))) / 3);
+    margin-left: var(--margin-card);
+    margin-top: var(--margin-card);}
+
+
+.card-description {padding: 20px 24px;
+    border: 1px solid var(--border-works-card-description);
+    border-top-width: 0;}
+
+.works-card-title {font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;}
+
+.works-card-text {font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    }
+
+
+/* FOOTER */
+
+footer {background-color: var(--background-hero-footer);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    padding: 60px 0;}
+
+.page-footer .logo {color: var(--text-color-secondary);
+display: inline-block;
+margin-bottom: 20px;}
+
+
+.mail {color: rgba(255,255,255,.6);
+    font-style: normal;
+
+    margin-bottom: 9px;}
+
+.location {color: var(--text-color-secondary);}
+.footer-contact {display: block;}
+.footer-contact:not(:last-of-type) {margin-bottom: 9px;}
+
+
+
+
