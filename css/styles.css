@@ -14,10 +14,11 @@
     --background-footer: #2f303a;
     --background-team-section: #f5f4fa;
     --background-team-card: #ffffff;
-    --background-filter: #f5f4fa;
+    --background-filter-features: #f5f4fa;
     --background-card: #ffffff;
     --header-line: #ececec;
     --border-works-card-description: #eeeeee;
+    --clients-border: #afb1b8;
 
     --margin-card: 30px;
     
@@ -89,23 +90,7 @@ header {
 .nav-link:focus,
 .current {color: var(--accent-color);}
 
-.nav-contact-item>.contact::before {
-    display: inline-block;
-    content: '';
-    margin-right: 10px;
-    background-color: blue;
-}
 
-
-.nav-contact-item:nth-child(1) > .contact::before {
-    height: 12px;
-    width: 16px;
-        }
-
-.nav-contact-item:nth-child(2) > .contact::before {
-     height: 16px;
-    width: 10px;
-}
 
 .contact:hover,
 .contact:focus {
@@ -207,9 +192,16 @@ header {
 
 .features-list {display:flex;}
 
+.features-container {height: 120px;
+    background-color: var(--background-filter-features);
+    margin-bottom: var(--margin-card);
+}
+
 .features-item {flex-basis: calc((100% - (3 * var(--margin-card))) / 4);}
 
 .features-item + .features-item {margin-left: var(--margin-card);}
+
+.features-icon {width: 70px; height: 70px;}
 
 .features-item-title {font-size: 14px;
     line-height: 1.14;
@@ -217,14 +209,8 @@ header {
     letter-spacing: 0.03em;
     margin-bottom: 10px;
     }
-.features-item-title::before {display:block;
-content: '';
-height: 120px;
-background-color: var(--background-team-section);
-margin-bottom: 30px;
-outline: 1px solid red;
 
-}
+    
     
 .features-text {font-size: 14px;
     line-height: 1.71;
@@ -276,8 +262,7 @@ justify-content: space-between;}
 
 }
 
-.socials-item-link {display: block;
-    margin: 0 auto;
+.socials-item-link {
     height: 44px;
     width: 44px;
     outline: 1px solid red;
@@ -290,8 +275,14 @@ justify-content: space-between;}
 .clients-list-item {
     height: 92px;
     width: 170px;
-    outline: 1px solid red;
+    border: 1px solid var(--clients-border);
+    border-radius: 4px;
+    padding: 16px 32px;
 }
+
+.clients-link:hover .clients-list-item {border: 1px solid var(--accent-color);}
+
+.clients-icon {width: 106px; height: 60px;}
 
 /* PORTFOLIO */
 
@@ -303,7 +294,7 @@ justify-content: space-between;}
 .filter-item:not(:last-of-type) {margin-right: 8px;}
 
 .filter-button {color: var(--title-text-color);
-    background-color: var(--background-filter);
+    background-color: var(--background-filter-features);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
