@@ -63,6 +63,8 @@ section {
 }
 
 /* HEADER */
+
+
 header {
     background-color: var(--background-header);
     font-weight: 500;
@@ -89,7 +91,9 @@ header {
 
 .nav-item {
     display: flex;}
-.nav-item:not(:last-child), .nav-contact-item:not(:last-child) {margin-right: 50px;}
+.nav-item:not(:last-child), 
+.nav-contact-item:not(:last-child) {
+    margin-right: 50px;}
 
 .nav-link {
     color: var(--title-text-color);}
@@ -102,20 +106,19 @@ header {
     height: 12px; 
     width: 16px;
     margin-right: 10px;
-    fill: var(--text-color-primery);
+    fill: currentColor;
 }
 
 .phone-icon {
-    height: 16px;
-    width: 10px;
     margin-right: 10px;
-    fill: var(--text-color-primery);
+    fill: currentColor;
     text-align: center;
 }
 
 .contact {
     display: flex;
-align-items: center;}
+    align-items: center;
+    fill: var(--text-color-primery);}
 
 .contact:hover,
 .contact:focus {
@@ -174,7 +177,8 @@ align-items: center;}
     overflow: hidden;}
 
 /* HERO */
-.hero {
+
+.hero {max-width: 100%;
     color: var(--text-color-secondary);
     background-color: var(--background-hero);
     border: 1px solid #000000;
@@ -242,9 +246,6 @@ align-items: center;}
 .features-item + .features-item {
     margin-left: var(--margin-card);}
 
-.features-icon {
-    width: 70px; 
-    height: 70px;}
 
 .features-item-title {
     font-size: 14px;
@@ -262,13 +263,9 @@ align-items: center;}
     line-height: 1.71;
     letter-spacing: 0.03em;}
 
-.features-icon {
-    height: 70px; 
-    width: 70px;
-    }
-
 
     /* CASES */
+
 .cases-list {
     display: flex;
     justify-content: space-between;}
@@ -325,6 +322,7 @@ align-items: center;}
     height: 44px;
     width: 44px;
     padding: 12px;
+    fill: var(--text-color-secondary);
     }
 
 .socials-item-link:hover,
@@ -332,10 +330,6 @@ align-items: center;}
     background-color: var(--accent-color);
     border-radius: 50%;}
  
-
-.socials-icon {
-    height: 20px;
-    width: 20px; }
 
 .team-icon {
     fill: var(--icon-color-primary);}
@@ -370,8 +364,6 @@ align-items: center;}
     border: 1px solid var(--accent-color);}
 
 .clients-icon {
-    width: 106px; 
-    height: 60px; 
     fill: var(--icon-color-primary);
     }
 
